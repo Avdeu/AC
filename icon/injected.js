@@ -5,7 +5,11 @@ document.querySelector('input').addEventListener('change', function(){
 	{
 		y = 1;
 	}
-	else 
+	else if (x > 999999)
+	{
+		y = 999999
+	}
+	else
 	{
 		y = document.querySelector('input').value;
 	}
