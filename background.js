@@ -9,7 +9,7 @@
 		  {
 				  timerse = result.key.timers;
 			}
-			  timerse = timerse * 60000;
+			  timerse = timerse * 15000;
 			  timerId = setTimeout(tick, timerse);
 	  });
   }
@@ -21,7 +21,7 @@
 		  {
 				  timerse = result.key.timers;
 			  }
-			  timerse = timerse * 60000;
+			  timerse = timerse * 15000;
 			  let timerId = setTimeout(tick, timerse);
 			  })
 
