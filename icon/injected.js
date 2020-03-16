@@ -5,9 +5,9 @@ document.querySelector('input').addEventListener('change', function(){
 	{
 		y = 1;
 	}
-	else if (x > 999999)
+	else if (x > 1440)
 	{
-		y = 999999
+		y = 1440
 	}
 	else
 	{
@@ -18,6 +18,8 @@ document.querySelector('input').addEventListener('change', function(){
 		{
 			"timers": y
 	}},null);
+	chrome.runtime.reload()
+	//chrome.runtime.restart ()
 });
 
 chrome.storage.local.get(['key'], function(result)
